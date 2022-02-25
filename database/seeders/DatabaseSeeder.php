@@ -17,6 +17,7 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
+        $this->call(CorralunoSeeder::class);
         Corraldos::factory(10)->create();
         Parque::factory(10)->create();
     }
